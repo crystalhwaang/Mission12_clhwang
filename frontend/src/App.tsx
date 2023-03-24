@@ -1,25 +1,44 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { teams } from './data';
+import Card from '@mui/material/Card';
+import { CardContent } from '@mui/material';
+import { padding } from '@mui/system';
 
 function App() {
+  return (   
+    <>
+      <Header />
+      <TeamList />
+    </>
+  );
+}
+
+function Header() {
+  return (<h1>Learn About NCAA Basketball Teams!</h1>)
+}
+
+function TeamInfo(team: any) {
+    return(
+      <Card sx={{ maxWidth: 275, margin: 5}}>
+        <CardContent>
+        <h2>{team.school}</h2>
+        <h3>Mascot: {team.name}</h3>
+        <h3>Location:  {team.city}, {team.state}</h3>
+        </CardContent>
+      </Card>
+
+    )
+}
+
+function TeamList() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    {teams.map((team) => (
+      <TeamInfo {...team} />
+    ))}
+    </>
   );
 }
 
