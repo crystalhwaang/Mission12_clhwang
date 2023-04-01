@@ -5,10 +5,12 @@ import { teams } from './data';
 import Card from '@mui/material/Card';
 import { CardContent } from '@mui/material';
 import { padding } from '@mui/system';
+import TopBanner from "./new";
 
 function App() {
   return (   
     <>
+      <TopBanner />
       <Header />
       <TeamList />
     </>
