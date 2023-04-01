@@ -8,7 +8,7 @@ import { padding } from '@mui/system';
 import TopBanner from "./new";
 
 function App() {
-  return (   
+  return (    
     <>
       <TopBanner />
       <Header />
