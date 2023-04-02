@@ -4,13 +4,13 @@ import './App.css';
 function Podcast() {
     return (
         <>
-            <Header />
+            <PodcastHeader />
             <Link />
         </>
     )
 }
 
-function Header() {
+function PodcastHeader() {
     return (
         <h1>Welcome to the Podcast Page!</h1>
     )

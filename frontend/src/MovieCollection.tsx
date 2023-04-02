@@ -12,16 +12,14 @@ function MovieCollection() {
                 <h1>Joel Hilton's Movie Collection</h1>
             </div>
             <div>
-                <table className='table'>
+                <table className="table">
                     <thead>
                         <tr>
-                            <th>
-                                <th>Title</th>
-                                <th>Year</th>
-                                <th>Director</th>
-                                <th>Rating</th>
-                                <th>Category</th>
-                            </th>
+                            <th>Title</th>
+                            <th>Year</th>
+                            <th>Director</th>
+                            <th>Rating</th>
+                            <th>Category</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -37,8 +35,6 @@ function MovieCollection() {
                     </tbody>
                 </table>
             </div>
-
-            <button className='btn btn-primary'></button>
         </>
     )
 }
