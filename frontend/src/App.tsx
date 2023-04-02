@@ -6,19 +6,36 @@ import Card from '@mui/material/Card';
 import { CardContent } from '@mui/material';
 import { padding } from '@mui/system';
 import TopBanner from "./new";
+import MyImage from './MyImage.jpg';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Podcast from './Podcast';
+import MovieCollection from './MovieCollection';
 
 function App() {
   return (    
     <>
-      <TopBanner />
+      <Router>
+        <Routes>
+          <Route path = "/podcast" Component={Podcast} />
+          <Route path = "/moviecollection" Component={MovieCollection} />
+        </Routes>
+      </Router>
       <Header />
-      <TeamList />
+      <Image />
     </>
   );
 }
 
 function Header() {
-  return (<h1>Learn About NCAA Basketball Teams!</h1>)
+  return (<h1>Joel's Movie Collection!</h1>)
+}
+
+function Image() {
+  return (
+    <div>
+      <img src = {MyImage} alt = "Joel Hilton Image"/>
+    </div>
+  )
 }
 
 function TeamInfo(team: any) {
