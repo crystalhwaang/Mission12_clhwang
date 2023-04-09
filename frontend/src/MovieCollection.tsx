@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import data from "./MovieData.json";
+import MovieList from './movie/MovieList';
 
 const md = data.MovieData;
 
@@ -22,6 +23,7 @@ function MovieCollection() {
                             <th>Category</th>
                         </tr>
                     </thead>
+                    <MovieList />
                     <tbody>
                         {md.map((m) => (
                             <tr>

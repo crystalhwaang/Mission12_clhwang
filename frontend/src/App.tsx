@@ -25,7 +25,7 @@ function Navigation() {
     <div>
       <p><a href = "/">Home</a></p>
       <p><a href = "/podcast">Podcast</a></p>
-      <p><a href = "/moviecollection">Movie Collection</a></p>
+      <p><a href = "/moviecollection">Movie Collection7</a></p>
     </div>
   )
 }
