@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Mission12_clhwang.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,11 +7,19 @@ using System.Threading.Tasks;
 
 namespace Mission12_clhwang.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
     public class MovieController : Controller
     {
-        public IActionResult Index()
+        private JoelHiltonMovieCollectionContext context;
+        public MovieController(JoelHiltonMovieCollectionContext temp)
         {
-            return View();
+            context = temp;
+        }
+        public IEnumerable<Movie> Get()
+        {
+            var x = context.Movies.ToArray();
+            return x;
         }
     }
 }
