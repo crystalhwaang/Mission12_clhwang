@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\chwan\\Documents\\IS 413\\Mission12_clhwang\\backend\\Mission12_clhwang\\Mission12_clhwang.csproj": {}
+    "C:\\Users\\chwan\\Documents\\IS 413\\Mission12_clhwang\\backend\\Mission12_clhwang.csproj": {}
   },
   "projects": {
-    "C:\\Users\\chwan\\Documents\\IS 413\\Mission12_clhwang\\backend\\Mission12_clhwang\\Mission12_clhwang.csproj": {
+    "C:\\Users\\chwan\\Documents\\IS 413\\Mission12_clhwang\\backend\\Mission12_clhwang.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\chwan\\Documents\\IS 413\\Mission12_clhwang\\backend\\Mission12_clhwang\\Mission12_clhwang.csproj",
+        "projectUniqueName": "C:\\Users\\chwan\\Documents\\IS 413\\Mission12_clhwang\\backend\\Mission12_clhwang.csproj",
         "projectName": "Mission12_clhwang",
-        "projectPath": "C:\\Users\\chwan\\Documents\\IS 413\\Mission12_clhwang\\backend\\Mission12_clhwang\\Mission12_clhwang.csproj",
+        "projectPath": "C:\\Users\\chwan\\Documents\\IS 413\\Mission12_clhwang\\backend\\Mission12_clhwang.csproj",
         "packagesPath": "C:\\Users\\chwan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\chwan\\Documents\\IS 413\\Mission12_clhwang\\backend\\Mission12_clhwang\\obj\\",
+        "outputPath": "C:\\Users\\chwan\\Documents\\IS 413\\Mission12_clhwang\\backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\chwan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,22 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
