@@ -11,6 +11,9 @@ function MovieList()
 
     fetchMovie();
 
+    const filteredMovies = movieData.filter((m) => m.edited === "Yes");
+    const sortedMovies = filteredMovies.sort((a, b) => a.title.localeCompare(b.title));
+
     return (
         <>
             <table className="table table-bordered">
@@ -27,7 +30,7 @@ function MovieList()
                     </tr>
                 </thead>
                 <tbody>
-                    {movieData.map((m) => (
+                    {filteredMovies.map((m) => (
                         <tr key = {m.movieId} >
                             <td>{m.title}</td>
                             <td>{m.year}</td>
