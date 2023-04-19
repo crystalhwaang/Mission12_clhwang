@@ -22,7 +22,7 @@ namespace Mission12_clhwang.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlite("Data Source = JoelHiltonMovieCollection.sqlite");
+                optionsBuilder.UseSqlite("Data Source = JoelHiltonMovieCollection (1).sqlite");
             }
         }
 
