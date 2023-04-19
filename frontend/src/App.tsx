@@ -6,7 +6,7 @@ import MovieCollection from './MovieCollection';
 import Home from './Home';
 
 function App() {
-  return (    
+  return (     
     <>
       <Navigation />
       <Router>
