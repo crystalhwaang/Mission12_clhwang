@@ -18,8 +18,7 @@ namespace Mission12_clhwang.Controllers
         }
         public IEnumerable<Movie> Get()
         {
-            var x = context.Movies.ToArray();
-            return x;
+            return context.Movies.ToArray();
         }
     }
 }

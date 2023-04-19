@@ -5,14 +5,14 @@ namespace Mission12_clhwang.Models
 {
     public partial class Movie
     {
-        public byte[]? MovieId { get; set; }
-        public byte[]? Category { get; set; }
-        public byte[]? Title { get; set; }
-        public byte[]? Year { get; set; }
-        public byte[]? Director { get; set; }
-        public byte[]? Rating { get; set; }
-        public byte[]? Edited { get; set; }
-        public byte[]? LentTo { get; set; }
-        public byte[]? Notes { get; set; }
+        public int MovieId { get; set; }
+        public string? Category { get; set; }
+        public string? Title { get; set; }
+        public int Year { get; set; }
+        public string? Director { get; set; }
+        public string? Rating { get; set; }
+        public bool Edited { get; set; }
+        public string? LentTo { get; set; }
+        public string? Notes { get; set; }
     }
 }
